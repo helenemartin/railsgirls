@@ -14,6 +14,8 @@ end
 
 gem 'carrierwave'
 
+gem 'devise'
+
 
 
 # Gems used only for assets and not required

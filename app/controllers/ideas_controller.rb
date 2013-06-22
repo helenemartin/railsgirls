@@ -3,7 +3,6 @@ class IdeasController < ApplicationController
   # GET /ideas.json
   def index
     @ideas = Idea.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @ideas }
@@ -14,6 +13,7 @@ class IdeasController < ApplicationController
   # GET /ideas/1.json
   def show
     @idea = Idea.find(params[:id])
+
 
     respond_to do |format|
       format.html # show.html.erb
