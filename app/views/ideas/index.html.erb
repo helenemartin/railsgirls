@@ -1,14 +1,24 @@
 <h1>Listing ideas for rails Girls</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Picture</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+
+
+<% @ideas.each do |idea| %>
+<div class="row">
+  <div class="span4">
+    <%= image_tag idea.picture_url, :width => '100%' if idea.picture.present?%>
+    <h4><%= link_to idea.name, idea %></h4>
+    <%= idea.description %>
+  </div>
+<% end %>
+
+<ul class="nav">
+  <li class="active"><a href="/ideas">Ideas</a></li>
+</ul>
+
+
+<br />
+
+
 
 <% @ideas.each do |idea| %>
   <tr>
@@ -16,7 +26,9 @@
     <td><%= idea.description %></td>
     <td><%= idea.picture %></td>
     <td><%= link_to 'Show', idea %></td>
-    <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
+    
+      <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
+
     <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
