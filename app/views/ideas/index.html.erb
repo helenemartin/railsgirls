@@ -17,5 +17,6 @@
     </div>
   <div/>
 <% end %>
-
-<%= link_to 'New Idea', new_idea_path %>
+<% if can?(:manage, @ideas) %>
+  <%= link_to 'New Idea', new_idea_path %>
+<% end %>
