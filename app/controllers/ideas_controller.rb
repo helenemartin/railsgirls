@@ -26,9 +26,15 @@ class IdeasController < ApplicationController
   def new
     @idea = Idea.new
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @idea }
+    if user_signed_in?
+      respond_to do |format|
+        format.html # new.html.erb
+        format.json { render json: @idea }
+      end
+    else 
+      flash[:alert] = 'You need to be logged in!'
+
+      redirect_to '/users/sign_up'
     end
   end
 

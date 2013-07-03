@@ -2,6 +2,7 @@
 
 <p>
   <b>Name:</b>
+  <%= @idea.name%>
   <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 </p>
 
