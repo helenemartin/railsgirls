@@ -7,7 +7,7 @@
     <div class="span4">
       <%= image_tag idea.picture_url, :width => '100%' if idea.picture.present?%>
       <h4><%= link_to idea.name, idea %></h4>
-      <%= idea.description %>
+      <%= simple_format idea.description %>
       <br/>
       <%= link_to 'Show', idea %>
       <% if can?(:manage, idea) %>
