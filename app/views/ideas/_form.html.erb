@@ -20,9 +20,23 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :picture %><br />
-    <%= f.file_field :picture %>
+    <%= f.label :medium_16mm, "16mm" %>
+    <%= f.radio_button :medium, "16mm" %>
+    <br/>
+
+    <%= f.label :medium_rails, "Rails" %>
+    <%= f.radio_button :medium, "Rails" %>
+
+    <br />
+
+    <%= f.label :medium_performance, "Performance" %>
+    <%= f.radio_button :medium, "Performance" %>
+
+    <br />
+    <%= f.label :medium_digital, "Digital" %>
+    <%= f.radio_button :medium, "Digital" %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
