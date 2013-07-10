@@ -16,8 +16,8 @@
     <div class="container">
       <a class="brand" href="/">The Jerwood Awards</a>
       <ul class="nav">
-        <li class="active"><a href="/ideas">Ideas</a></li>
-        <li ><%= link_to 'New Idea', new_idea_path %></li>
+        <li class="<%= 'active' if current_page?(ideas_path) %>"><a href="/ideas">Ideas</a></li>
+        <li class="<%= 'active' if current_page?(new_idea_path) %>"><%= link_to 'New Idea', new_idea_path %></li>
         <li><%= link_to "Website", "http://www.sewagecorporationunit.com"%></li>
 
       </ul>
