@@ -10,10 +10,7 @@
       <%= simple_format idea.description %>
       <br/>
       <%= link_to 'Show', idea %>
-      <% if can?(:manage, idea) %>
-        <%= link_to 'Edit', edit_idea_path(idea) %>
-        <%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <% end %>
+      <%= render :partial => "admin_links", :locals => { :idea => idea } %>
     </div>
   <div/>
 <% end %>
