@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jerwood Awards</title>
+  <title><%= ENV['TITLE'] %></title>
  
 
 
@@ -14,7 +14,7 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="/">The Jerwood Awards</a>
+      <a class="brand" href="/"><%= ENV['TITLE'] %></a>
       <ul class="nav">
         <li class="<%= 'active' if current_page?(ideas_path) %>"><a href="/ideas">Ideas</a></li>
         <li class="<%= 'active' if current_page?(new_idea_path) %>"><%= link_to 'New Idea', new_idea_path %></li>
