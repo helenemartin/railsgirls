@@ -11,7 +11,218 @@
  *= require_self
  *= require_tree .
  */
-body { padding-top: 100px; }
-footer { margin-top: 100px; }
-table, td, th { vertical-align: middle !important; border: none !important; }
-th { border-bottom: 1px solid #DDD !important; }
+body { 
+  padding-top: 100px; 
+  font-weight:normal;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:13px;
+  color:#333;
+}
+nav {
+  position: relative;
+  right:-10px;
+  top:0;
+}
+
+nav ul li{
+  float:left;
+}
+
+nav ul li a {
+  display:block;
+  height:49px;
+  color:#ccc;
+  padding:36px 18px 0;
+  font-size:17px;
+}
+
+nav ul li a:hover {
+  text-decoration:none;
+  background:url(images/bg_nav_rolloverrr.png) 0 0 repeat-x;
+  color:#96DDFC;
+}
+
+
+
+ul {
+  list-style:none;
+}
+
+a {
+  text-decoration:none;
+  color:#1FA2E1;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+a:focus {
+  outline:none;
+}
+
+p {
+  margin:0 0 11px 0;
+}
+
+
+h1, h2, h3, h4 {
+  font-size:32px;
+  letter-spacing:-1px;
+  line-height:100%;
+  padding-bottom:15px;
+}
+
+h1 {
+  font-weight:normal;
+}
+
+h1 a:hover {
+  text-decoration:none;
+  color:#333;
+}
+
+h2 {
+  font-size:20px;
+  padding-top:10px;
+  font-weight:normal;
+}
+
+h3 {  even though there are no h3 tags, it's sometimes good practice to just set up all the h1-h4 tags 
+  font-size:18px;
+  padding-top:10px;
+}
+
+h4 { 
+  font-size:16px;
+  padding-top:10px;
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+=02 LAYOUT 
+-----------------------------------------------------------------------------*/
+
+#wrapper {
+  background:url(../images/bg_wrapper.png) 0 0 repeat-x;
+}
+
+#container {
+  margin:0 auto;
+  width:960px;
+}
+
+header {
+  height:190px;
+  position:relative;
+}
+
+
+#logo {
+  /*position:relative;
+  top:115px;
+  left:0;*/
+  size: 60px;
+ position: absolute;
+ margin: -300px 500px 20px 150px;
+ height: 60px;
+
+}
+.my-picture img {
+ size: 20px;
+ display: inline-block;
+ padding: 10px 0 20px;
+ height: 65px;
+
+
+}
+
+
+*/
+
+
+/*----------------------------------------------------------------------------- 
+=03 NAVIGATION (mainMenu)
+-----------------------------------------------------------------------------*/
+
+
+nav {
+  position:absolute;
+  right:-10px;
+  top:0;
+}
+
+nav ul li{
+  float:left;
+}
+
+nav ul li a {
+  display:block;
+  height:49px;
+  color:#ccc;
+  padding:36px 18px 0;
+  font-size:17px;
+}
+
+nav ul li a:hover {
+  text-decoration:none;
+  background:url(images/bg_nav_rolloverr.png) 0 0 repeat-x;
+  color:#96DDFC;
+}
+
+
+/*----------------------------------------------------------------------------- 
+=04 SOCIAL MEDIA  
+-----------------------------------------------------------------------------*/
+
+
+#socialMedia {
+  position:absolute;
+  right:0;
+  top:120px;
+}
+
+#socialMedia ul li {
+   display:inline-block;
+   width:60px;
+   height:60px;
+   background:blue; 
+   text-indent:-9999em;
+}
+
+#socialMedia ul li.facebook {
+  background:url(images/filmwerkplaatsnav.png) 0px 64px;
+}
+#socialMedia ul li.vimeo {
+  background:url(images/filmwerkplaatsnav.png) -59px 63px; 
+}
+
+#socialMedia ul li.linkedin {
+  background:url(images/filmwerkplaatsnav.png) -120px 64px; 
+}
+
+#socialMedia ul li.rss {
+  background:url(images/filmwerkplaatsnav.png) -180px 64px; 
+}
+
+
+
+#socialMedia ul li.facebook:hover {
+  background:url(images/filmwerkplaatsnav.png) 0px 0px; 
+}
+
+#socialMedia ul li.vimeo:hover {
+  background:url(images/filmwerkplaatsnav.png) -60px 0px; 
+}
+
+#socialMedia ul li.linkedin:hover {
+  background:url(images/filmwerkplaatsnav.png) -120px 0px; 
+}
+
+#socialMedia ul li.rss:hover {
+  background:url(images/filmwerkplaatsnav.png) -180px 0px; 
+}
+
+
+
