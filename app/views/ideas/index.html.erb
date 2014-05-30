@@ -1,10 +1,10 @@
-<h1>Listing ideas for <%= ENV['LIST_TITLE'] %></h1>
+<h1>Listing ideas for the Jerwood Video Award<%= ENV['LIST_TITLE'] %></h1>
 
 
 
 <% @ideas.each do |idea| %>
   <div class="row">
-    <div class="span4">
+    <div class="span6">
       <%= image_tag idea.picture_url, :width => '100%' if idea.picture.present?%>
       <h4><%= link_to idea.name, idea %></h4>
       <%= simple_format idea.description %>
